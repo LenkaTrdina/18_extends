@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Hairdresser Mirko</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+  <body>
+  <!-- Navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+
+            <a href="/" class="navbar-brand">MIRKO</a>
+
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/kaj-nudimo">Kaj nudimo</a></li>
+                    <li><a href="/contact">Naroči se</a></li>
+                    <li><a href="/" data-toggle="modal">O nas</a></li>
+
+                </ul>
+            </div class="collapse navbar-collapse navHeaderCollapse">
+
+        </div>
+    </div>
+  <!-- End of navbar -->
+
+  <!-- Foto -->
+
+    <div class="carousel-inner">
+        <div>
+            {% block img %}{% endblock img %}
+        </div>
+
+    </div>
+
+
+
+
+  <!-- end of foto -->
+
+  <!-- Kaj nudimo -->
+
+  <div class="container">
+      {% block tekst %}{% endblock tekst %}
+
+  </div>
+
+  <!-- Sign up -->
+  <div class="container">
+
+      <br>
+      <div class="col-sm-6 form-group">
+          <h1><b>Naroči se</b></h1>
+
+            <br>
+                    <input type="text" class="form-control" placeholder="Ime in priimek">
+                    <input type="text" class="form-control" placeholder="Tel. številka">
+                    <input type="text" class="form-control" placeholder="Temin">
+                    <textarea class="form-control" rows="4" placeholder="Ostalo"></textarea>
+            </br>
+          <button class="btn btn-primary pull-right" type="submit">Pošlji</button>
+  </div>
+
+ <!-- Table -->
+       <div class="col-sm-6">
+           <h1><b>Urnik</b></h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Dan</th>
+                            <th>Ure</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Ponedeljek</td>
+                            <td>8:00 - 16:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Torek</td>
+                            <td>10:00 - 18:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sreda</td>
+                            <td>8:00 - 16:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Četrtek</td>
+                            <td>8:00 - 16:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Petek</td>
+                            <td>12:00 - 20:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sobota</td>
+                            <td>8:00 - 16:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Nedelja</td>
+                            <td>8:00 - 12:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+</div>
+  <!-- End of: Naroči se -->
+
+
+
+
+  <!-- Footer -->
+  <div class="navbar navbar-inverse" id="foot">
+      <div class="container">
+
+              <div class="col-sm-6">
+            <div class="container navbar-text pull-left">
+                <p><b>Kontakt</b></p>
+                <p>Frizer Mirko s.p.</p>
+                <p>Davčna št.: 324324324</p>
+                <p>Tel: 01/345345345</p>
+                <p>Email: frizer.mirko@f-mirko.com</p>
+            </div>
+              </div>
+                <div class="col-sm-6">
+            <div class="container navbar-text pull-right text-right">
+                <p><a href="/">Navigacija</a></p>
+                <p><a href="/kaj-nudimo">Kaj nudimo</a></p>
+                <p><a href="/contact">Naroči se</a></p>
+                <p><a href="/">O nas</a></p>
+            </div>
+            </div>
+
+      </div>
+  </div>
+  <!-- end of footer -->
+
+
+    <!-- modal -->
+
+<div class="modal fade" id="onas" role="dialog">
+    <div class="modal-dialog">
+        <div class=" modal-content">
+            <div class="modal-header">
+                <p>O nas</p>
+                <p>Lorem ipsum dolor sit amet, at vel nulla causae theophrastus, eu eos ornatus interpretaris.</p>
+                <p>Cu maiorum blandit reprehendunt sit, sed id vitae gloriatur consequuntur, ne adhuc vocibus per. Mei quis hinc te, euripidis similique duo cu, ius euripidis consequuntur eu. Te sea tota ferri maiestatis, at sit utinam possim noluisse, pri tempor singulis quaestio id. Ut has philosophia definitionem, labitur deleniti pri te. Ei qui saepe diceret definiebas, duis regione invenire no ius.</p>
+                <img src="assets/img/04_mirko.jpg" alt="hairdresser image 1" class="img-responsive">
+                <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Zapri</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- end of modal -->
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
